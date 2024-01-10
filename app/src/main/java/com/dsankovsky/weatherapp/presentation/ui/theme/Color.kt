@@ -1,4 +1,4 @@
-package com.dsankovsky.weatherapp.ui.theme
+package com.dsankovsky.weatherapp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
