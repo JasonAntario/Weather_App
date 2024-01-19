@@ -19,7 +19,7 @@ interface FavouritesStore : Store<Intent, State, Label> {
     sealed interface Intent {
 
         data object ClickSearch : Intent
-        data object ClickToFavourite : Intent
+        data object ClickAddToFavourite : Intent
         data class CityItemClick(val city: City) : Intent
     }
 
@@ -105,7 +105,7 @@ class FavouritesStoreFactory @Inject constructor(
                     publish(Label.ClickSearch)
                 }
 
-                Intent.ClickToFavourite -> {
+                Intent.ClickAddToFavourite -> {
                     publish(Label.ClickToFavourite)
                 }
             }
